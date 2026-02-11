@@ -1,0 +1,4 @@
+[[permission]]
+identifier = "allow-exit-app"
+description = "Allows the app to exit from the tray menu."
+commands.allow = ["exit_app"]
