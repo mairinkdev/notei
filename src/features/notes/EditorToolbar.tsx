@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Editor } from "@tiptap/core";
+import type {} from "@tiptap/extension-underline";
 import { Button } from "@/components/ui/Button";
 import { Tooltip } from "@/components/ui/Tooltip";
 import { Bold, Italic, Strikethrough, Underline as UnderlineIcon, ListChecks, List, ListOrdered, Heading1, Heading2, Heading3, Quote, Code, Braces, Link as LinkIcon } from "lucide-react";
@@ -65,11 +66,7 @@ export function EditorToolbar({ editor }: EditorToolbarProps) {
             "h-8 w-8 shrink-0 p-0 text-[var(--text-secondary)] hover:text-[var(--text)]",
             editor.isActive("underline") && "bg-[var(--surface-2)] text-[var(--text)]"
           )}
-          onClick={() => {
-            try {
-              editor.chain().focus().toggleUnderline().run();
-            } catch {}
-          }}
+          onClick={() => editor.chain().focus().toggleUnderline().run()}
         >
           <UnderlineIcon size={18} />
         </Button>

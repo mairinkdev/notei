@@ -6,7 +6,7 @@ import Placeholder from "@tiptap/extension-placeholder";
 import Image from "@tiptap/extension-image";
 import TaskList from "@tiptap/extension-task-list";
 import TaskItem from "@tiptap/extension-task-item";
-import { Underline } from "./underlineExtension";
+import Underline from "@tiptap/extension-underline";
 import Link from "@tiptap/extension-link";
 import type { NoteKind, NoteAttachment } from "./types";
 import { saveAttachment } from "@/features/attachments/attachmentService";

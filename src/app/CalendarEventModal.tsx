@@ -602,7 +602,7 @@ export function CalendarEventModal({
               </div>
             </div>
           </div>
-          <div className="sticky bottom-0 mt-2 flex items-center justify-between gap-2 border-t border-[var(--surface-border)] bg-[var(--surface)]/90 px-1 pt-3 backdrop-blur">
+          <div className="sticky bottom-0 mt-2 flex items-center justify-between gap-2 border-t border-[var(--surface-border)] px-1 pt-3">
             {!isNew ? (
               <Button
                 variant="ghost"

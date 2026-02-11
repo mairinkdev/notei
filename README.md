@@ -56,7 +56,7 @@ npm run tauri:dev
 ```
 
 - **Frontend only (browser):** `npm run dev` — persistence uses localStorage.
-- **Production build:** `npm run tauri:build` — artifacts in `src-tauri/target/release/bundle/`.
+- **Production build:** `npm run tauri:build` — artifacts in `src-tauri/target/release/bundle/`. Run the `.exe` from that folder (or use the installer). Do **not** run the exe in `target/debug/`: that is for development only and expects the dev server (localhost), so it will show "connection refused" if run alone.
 
 ## Scripts
 

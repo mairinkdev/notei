@@ -5,7 +5,7 @@ import Link from "@tiptap/extension-link";
 import TaskList from "@tiptap/extension-task-list";
 import TaskItem from "@tiptap/extension-task-item";
 import { Markdown } from "tiptap-markdown";
-import { Underline } from "@/features/notes/underlineExtension";
+import Underline from "@tiptap/extension-underline";
 
 let sharedEditor: Editor | null = null;
 
